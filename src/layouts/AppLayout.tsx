@@ -33,7 +33,7 @@ export default function AppLayout({ role }: { role: UserRole }) {
         </Stack>
         <Box className="drawer-spacer" />
         <Box className="market-open-note"><span className="live-indicator" /> NY market open <span>09:42 ET</span></Box>
-        <Divider sx={{ borderColor: '#40564c' }} />
+        <Divider sx={{ borderColor: 'divider' }} />
         <Button className="user-profile" onClick={() => setProfileOpen(true)} aria-label="View my profile"><span className="user-avatar">{isBroker ? 'JL' : 'AM'}</span><span>{isBroker ? 'Jordan Lee' : 'Alex Morgan'}<small>{isBroker ? 'Broker' : 'Procurement lead'}</small></span><span className="profile-menu">View profile</span></Button>
       </Drawer>
 

@@ -1,112 +1,279 @@
 .app-drawer .MuiDrawer-paper {
-  background: #eceee9;
-  color: #303236;
+  background: #ffffff;
+  color: #0f172a;
+  border-right: 1px solid #e2e8f0 !important;
 }
 
 .app-drawer .brand-mark {
-  border-color: #b7a395;
-  color: #a45f4b;
-  font-family: 'IBM Plex Sans', sans-serif;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1877f2;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-family: 'Inter', -apple-system, sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(24, 119, 242, 0.25);
+}
+
+.app-drawer .brand-name {
+  color: #0f172a !important;
+  font-family: 'Inter', 'IBM Plex Sans', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  letter-spacing: -0.02em;
 }
 
 .app-drawer .brand-name span {
-  color: #a45f4b;
+  color: #0f172a !important;
 }
 
 .app-drawer .brand-caption,
 .app-drawer .workspace-label {
-  color: #777a73;
+  color: #8c95a6 !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.2px !important;
 }
 
 .app-drawer .workspace-button {
   display: flex !important;
   align-items: center !important;
-  gap: 11px !important;
-  min-height: 64px !important;
-  padding: 10px 12px !important;
-  background: #fffefd !important;
-  border-color: #d9ddd5 !important;
-  color: #303236 !important;
+  gap: 10px !important;
+  min-height: 56px !important;
+  padding: 8px 12px !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  color: #0f172a !important;
   text-align: left !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03) !important;
+  transition: all 0.15s ease-in-out !important;
 }
 
 .app-drawer .workspace-button .MuiButton-endIcon {
   flex: 0 0 auto;
-  margin: 0 0 0 4px;
-  color: #8a8a83;
+  margin: 0 0 0 auto;
+  color: #94a3b8;
 }
 
-.app-drawer .workspace-button:hover,
-.app-drawer .side-nav-item.selected,
-.app-drawer .side-nav-item:hover,
-.app-drawer .user-profile:hover {
-  background: #f3eae5 !important;
-  color: #754537 !important;
+.app-drawer .workspace-button:hover {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+}
+
+.app-drawer .workspace-button:active {
+  background: #0f172a !important;
+  color: #ffffff !important;
+  border-color: #0f172a !important;
+}
+
+.app-drawer .workspace-button:active .workspace-name,
+.app-drawer .workspace-button:active .workspace-name small,
+.app-drawer .workspace-button:active .MuiButton-endIcon {
+  color: #ffffff !important;
 }
 
 .app-drawer .workspace-initials {
-  flex: 0 0 36px;
-  width: 36px;
-  height: 36px;
-  border-radius: 7px;
-  background: #f2e5df;
-  color: #92513f;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #ef4444;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
 }
 
 .app-drawer .workspace-name {
   flex: 1 1 auto;
   min-width: 0;
   overflow-wrap: anywhere;
-  color: #303236;
-  font-size: 11px !important;
+  color: #0f172a;
+  font-size: 12px !important;
+  font-weight: 600 !important;
   line-height: 1.3 !important;
   text-align: left;
-  white-space: normal;
 }
 
 .app-drawer .workspace-name small {
-  margin-top: 4px;
-  color: #777a73;
-  font-size: 9px;
-  line-height: 1.35;
-  white-space: normal;
-}
-
-.app-drawer .side-nav-item,
-.app-drawer .side-nav-item .MuiButton-startIcon {
-  color: #5f625e !important;
+  margin-top: 2px;
+  color: #64748b;
+  font-size: 10px;
+  line-height: 1.3;
+  font-weight: 400;
+  display: block;
 }
 
 .app-drawer .side-nav-item {
-  border-radius: 6px;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  color: #475569 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding: 8px 12px !important;
+  min-height: 38px !important;
+  border-radius: 8px !important;
+  transition: all 0.15s ease-in-out !important;
 }
 
-.app-drawer .side-nav-item.selected .MuiButton-startIcon,
-.app-drawer .side-nav-count,
-.app-drawer .profile-menu {
-  color: #a45f4b !important;
+.app-drawer .side-nav-item .MuiButton-startIcon {
+  color: #64748b !important;
+  margin-right: 10px !important;
 }
 
-.app-drawer .user-profile {
-  border-top-color: #d9ddd5 !important;
-  color: #303236 !important;
+.app-drawer .side-nav-item:hover {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
 }
 
-.app-drawer .user-avatar {
-  background: #eadbd1;
-  color: #754537;
+.app-drawer .side-nav-item:hover .MuiButton-startIcon {
+  color: #0f172a !important;
+}
+
+.app-drawer .side-nav-item:active {
+  background: #0f172a !important;
+  color: #ffffff !important;
+}
+
+.app-drawer .side-nav-item:active .MuiButton-startIcon {
+  color: #ffffff !important;
+}
+
+.app-drawer .side-nav-item.selected {
+  background: #ebf3fe !important;
+  color: #1877f2 !important;
+  font-weight: 600 !important;
+}
+
+.app-drawer .side-nav-item.selected .MuiButton-startIcon {
+  color: #1877f2 !important;
+}
+
+.app-drawer .side-nav-item.selected:hover {
+  background: #dbeafe !important;
+}
+
+.app-drawer .side-nav-item.selected:active {
+  background: #082f62 !important;
+  color: #ffffff !important;
+}
+
+.app-drawer .side-nav-item.selected:active .MuiButton-startIcon {
+  color: #ffffff !important;
+}
+
+.app-drawer .side-nav-count {
+  margin-left: auto;
+  background: #ff5722;
+  color: #ffffff !important;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 10px;
+  line-height: 1.4;
 }
 
 .app-drawer .market-open-note {
-  color: #555a54;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 8px;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.app-drawer .live-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
 }
 
 .app-drawer .market-open-note span:last-child {
-  color: #777a73;
+  margin-left: auto;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.app-drawer .user-profile {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 10px 8px !important;
+  border-radius: 8px !important;
+  color: #0f172a !important;
+  width: 100% !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  border-top: 1px solid #e2e8f0 !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+.app-drawer .user-profile:hover {
+  background: #f8fafc !important;
+}
+
+.app-drawer .user-profile:active {
+  background: #0f172a !important;
+  color: #ffffff !important;
+}
+
+.app-drawer .user-profile:active span {
+  color: #ffffff !important;
+}
+
+.app-drawer .user-profile:active .profile-menu {
+  color: #93c5fd !important;
+}
+
+.app-drawer .user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fed7aa;
+  color: #9a3412;
+  font-weight: 700;
+  font-size: 11px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.app-drawer .user-profile span:nth-of-type(2) {
+  font-weight: 600;
+  font-size: 12px;
+  color: #0f172a;
+}
+
+.app-drawer .user-profile small {
+  display: block;
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.app-drawer .profile-menu {
+  margin-left: auto;
+  color: #1877f2 !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+}
+
+.app-drawer .profile-menu:hover {
+  text-decoration: underline;
 }
 
 .app-drawer .MuiDivider-root {
-  border-color: #d9ddd5 !important;
+  border-color: #e2e8f0 !important;
 }
